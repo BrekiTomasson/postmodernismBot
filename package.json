@@ -1,0 +1,19 @@
+{
+  "name": "postmodernism_bot",
+  "version": "1.0.0",
+  "description": "[![NPM](https://nodei.co/npm/postmodernismBot.png)](https://nodei.co/npm/postmodernismBot/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrekiTomasson/postmodernismBot.git"
+  },
+  "author": "Breki Tomasson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrekiTomasson/postmodernismBot/issues"
+  },
+  "homepage": "https://github.com/BrekiTomasson/postmodernismBot#readme"
+}
