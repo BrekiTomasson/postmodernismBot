@@ -1,4 +1,5 @@
 # postmodernismBot
+
 [![NPM](https://nodei.co/npm/postmodernismBot.png)](https://nodei.co/npm/postmodernismBot/)
 
 For as long as I can remember I've been fascinated with language. The ability that we have to string together twenty-six
@@ -77,7 +78,8 @@ the bot the ability to understand language better than it does at the moment.
 1. Clone the repo.
 2. `npm install` to get the third party modules it requires.
 3. Copy any amount of `.txt` files into the folder called `./corpus`
-4.
+4. ???
+5. Profit!
 
 # Addendum
 
