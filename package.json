@@ -1,19 +1,71 @@
 {
-  "name": "postmodernism_bot",
-  "version": "1.0.0",
-  "description": "[![NPM](https://nodei.co/npm/postmodernismBot.png)](https://nodei.co/npm/postmodernismBot/)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BrekiTomasson/postmodernismBot.git"
-  },
   "author": "Breki Tomasson",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/BrekiTomasson/postmodernismBot/issues"
   },
-  "homepage": "https://github.com/BrekiTomasson/postmodernismBot#readme"
+  "dependencies": {
+    "compromise": "^11.5.3",
+    "debug": "^3.1.0",
+    "dotenv-extended": "^2.0.1",
+    "express": "^4.16.2",
+    "glob": "^7.1.2",
+    "jest": "~22.4.3",
+    "level": "^3.0.0",
+    "lexed": "^1.0.10",
+    "markov-chains-text": "^1.0.0",
+    "natural": "^0.5.6",
+    "node-telegram-bot-api": "^0.30.0",
+    "nodemon": "~1.17.3",
+    "rxjs": "~5.5.8",
+    "twit": "^2.2.9",
+    "twitter": "^1.7.1",
+    "uppercamelcase": "^3.0.0",
+    "wink-pos-tagger": "^1.3.4"
+  },
+  "description": "[![NPM](https://nodei.co/npm/postmodernismBot.png)](https://nodei.co/npm/postmodernismBot/)",
+  "engines": {
+    "node": ">= 9.8",
+    "npm": ">= 5.7"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-breki"
+    ]
+  },
+  "homepage": "https://github.com/BrekiTomasson/postmodernismBot#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "postmodernism_bot",
+  "nodemonConfig": {
+    "delay": "5000",
+    "events": {
+      "crash": "osascript -e 'display notification \"Crashed!\" with title \"postmodernismBot\"'",
+      "restart": "osascript -e 'display notification \"Restarting!\" with title \"postmodernismBot\"'",
+      "start": "osascript -e 'display notification \"Starting up!\" with title \"postmodernismBot\"'"
+    },
+    "ignore": [
+      "brain/*",
+      "corpus/*",
+      "test/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrekiTomasson/postmodernismBot.git"
+  },
+  "scripts": {
+    "lint": "node ./node_modules/eslint-config-breki/lint",
+    "start": "node index",
+    "test": "jest",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
+  },
+  "version": "0.0.0-development",
+  "devDependencies": {
+    "eslint": "~4.19.1",
+    "eslint-config-breki": "~1.0.6",
+    "loggly": "^1.1.1",
+    "semantic-release": "^15.1.5",
+    "travis-deploy-once": "^4.4.1"
+  }
 }
