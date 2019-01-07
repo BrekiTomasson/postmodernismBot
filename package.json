@@ -8,6 +8,7 @@
   "description": "The monorepo for the Postmodernism Bot.",
   "license": "MIT",
   "devDependencies": {
+    "gulp": "^4.0.0",
     "jest": "^23.6.0",
     "lerna": "^3.8.5",
     "shelljs": "^0.8.3",

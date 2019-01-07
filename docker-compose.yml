@@ -13,21 +13,35 @@ volumes:
 services:
 
   worker:
-    build: ./worker
+    build: ./docker/worker
     tty: true
     environment:
       - DEBUG=true
     networks:
       - backend
     volumes:
-      - ./worker/supervisor.d:/etc/supervisor.d
+      - ./docker/worker/supervisor.d:/etc/supervisor.d
       - ./corpus:/usr/src/app/corpus
       - ${LOG_DIR}/neo4j:/var/log
     depends_on:
       - neo4j
 
+  viewer:
+    build: ./docker/viewer
+    environment:
+      - NEO4J_USER=${NEO4J_USER}
+      - NEO4J_PASS=${NEO4J_PASS}
+    ports:
+      - 3000:3000
+    volumes:
+      - ./packages/postmodernism-bot-dataviwer/src:/usr/src/app/src
+    depends_on:
+      - neo4j
+    networks:
+      - frontend
+
   neo4j:
-    build: ./neo4j
+    build: ./docker/neo4j
     ports:
       - "7474:7474"
       - "1337:1337"
@@ -37,4 +51,5 @@ services:
       - ${DATA_DIR}/neo4j:/var/lib/neo4j/data
       - ${LOG_DIR}/neo4j:/var/log/neo4j
     networks:
+      - frontend
       - backend

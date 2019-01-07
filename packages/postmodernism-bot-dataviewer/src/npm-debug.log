@@ -1,0 +1,111 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '@types/wink-pos-tagger' ]
+2 info using npm@4.0.5
+3 info using node@v10.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @types/wink-pos-tagger
+8 silly fetchNamedPackageData @types/wink-pos-tagger
+9 silly mapToRegistry name @types/wink-pos-tagger
+10 silly mapToRegistry scope (from package name) @types
+11 verbose mapToRegistry no registry URL found in name for scope @types
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry http://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: '@types/wink-pos-tagger',
+14 silly mapToRegistry   scope: '@types',
+14 silly mapToRegistry   escapedName: '@types%2fwink-pos-tagger',
+14 silly mapToRegistry   name: '@types/wink-pos-tagger',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri http://registry.npmjs.org/@types%2fwink-pos-tagger
+16 verbose request uri http://registry.npmjs.org/@types%2fwink-pos-tagger
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 16:07:35
+19 verbose request using bearer token for auth
+20 verbose request id d23152990094d9de
+21 http request GET http://registry.npmjs.org/@types%2fwink-pos-tagger
+22 http 404 http://registry.npmjs.org/@types%2fwink-pos-tagger
+23 verbose headers { date: 'Mon, 07 Jan 2019 15:07:36 GMT',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'content-length': '21',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'set-cookie':
+23 verbose headers    [ '__cfduid=d9c07e3fd7aee75bb455e2f4562d612881546873655; expires=Tue, 07-Jan-20 15:07:35 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+23 verbose headers   'cf-cache-status': 'MISS',
+23 verbose headers   'cf-ray': '495755bc325f75c4-ARN',
+23 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 verbose headers   vary: 'Accept-Encoding',
+23 verbose headers   server: 'cloudflare' }
+24 silly get cb [ 404,
+24 silly get   { date: 'Mon, 07 Jan 2019 15:07:36 GMT',
+24 silly get     'content-type': 'application/json',
+24 silly get     'content-length': '21',
+24 silly get     connection: 'keep-alive',
+24 silly get     'set-cookie':
+24 silly get      [ '__cfduid=d9c07e3fd7aee75bb455e2f4562d612881546873655; expires=Tue, 07-Jan-20 15:07:35 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+24 silly get     'cf-cache-status': 'MISS',
+24 silly get     'cf-ray': '495755bc325f75c4-ARN',
+24 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 silly get     vary: 'Accept-Encoding',
+24 silly get     server: 'cloudflare' } ]
+25 silly fetchPackageMetaData Error: Not found : @types/wink-pos-tagger
+25 silly fetchPackageMetaData     at makeError (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:302:12)
+25 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:290:14)
+25 silly fetchPackageMetaData     at Request._callback (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:210:14)
+25 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:186:22)
+25 silly fetchPackageMetaData     at Request.emit (events.js:182:13)
+25 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:1081:10)
+25 silly fetchPackageMetaData     at Request.emit (events.js:182:13)
+25 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:1001:12)
+25 silly fetchPackageMetaData     at Object.onceWrapper (events.js:273:13)
+25 silly fetchPackageMetaData     at IncomingMessage.emit (events.js:187:15)
+25 silly fetchPackageMetaData  error for @types/wink-pos-tagger { Error: Not found : @types/wink-pos-tagger
+25 silly fetchPackageMetaData     at makeError (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:302:12)
+25 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:290:14)
+25 silly fetchPackageMetaData     at Request._callback (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:210:14)
+25 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:186:22)
+25 silly fetchPackageMetaData     at Request.emit (events.js:182:13)
+25 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:1081:10)
+25 silly fetchPackageMetaData     at Request.emit (events.js:182:13)
+25 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:1001:12)
+25 silly fetchPackageMetaData     at Object.onceWrapper (events.js:273:13)
+25 silly fetchPackageMetaData     at IncomingMessage.emit (events.js:187:15)
+25 silly fetchPackageMetaData   pkgid: '@types/wink-pos-tagger',
+25 silly fetchPackageMetaData   statusCode: 404,
+25 silly fetchPackageMetaData   code: 'E404' }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: Not found : @types/wink-pos-tagger
+30 verbose stack     at makeError (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:302:12)
+30 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:290:14)
+30 verbose stack     at Request._callback (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\npm-registry-client\lib\request.js:210:14)
+30 verbose stack     at Request.self.callback (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:186:22)
+30 verbose stack     at Request.emit (events.js:182:13)
+30 verbose stack     at Request.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:1081:10)
+30 verbose stack     at Request.emit (events.js:182:13)
+30 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files (x86)\Nodist\npmv\4.0.5\node_modules\request\request.js:1001:12)
+30 verbose stack     at Object.onceWrapper (events.js:273:13)
+30 verbose stack     at IncomingMessage.emit (events.js:187:15)
+31 verbose statusCode 404
+32 verbose pkgid @types/wink-pos-tagger
+33 verbose cwd C:\Users\BTomasson\Desktop\Lab\postmodernismBot\packages\postmodernism-bot-dataviewer\src
+34 error Windows_NT 10.0.10586
+35 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files (x86)\\Nodist\\npmv\\4.0.5\\bin\\npm-cli.js" "install" "@types/wink-pos-tagger"
+36 error node v10.1.0
+37 error npm  v4.0.5
+38 error code E404
+39 error 404 Not found : @types/wink-pos-tagger
+40 error 404
+41 error 404 '@types/wink-pos-tagger' is not in the npm registry.
+42 error 404 You should bug the author to publish it (or use the name yourself!)
+43 error 404 Note that you can also install from a
+44 error 404 tarball, folder, http url, or git url.
+45 verbose exit [ 1, true ]
