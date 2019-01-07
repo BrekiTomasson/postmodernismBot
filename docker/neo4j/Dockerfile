@@ -1,0 +1,3 @@
+FROM tpires/neo4j
+
+EXPOSE 7474 1337

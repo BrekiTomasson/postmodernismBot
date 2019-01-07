@@ -1,0 +1,40 @@
+version: '3'
+
+networks:
+  frontend:
+    driver: ${NETWORKS_DRIVER}
+  backend:
+    driver: ${NETWORKS_DRIVER}
+
+volumes:
+  neo4j:
+    driver: ${VOLUMES_DRIVER}
+
+services:
+
+  worker:
+    build: ./worker
+    tty: true
+    environment:
+      - DEBUG=true
+    networks:
+      - backend
+    volumes:
+      - ./worker/supervisor.d:/etc/supervisor.d
+      - ./corpus:/usr/src/app/corpus
+      - ${LOG_DIR}/neo4j:/var/log
+    depends_on:
+      - neo4j
+
+  neo4j:
+    build: ./neo4j
+    ports:
+      - "7474:7474"
+      - "1337:1337"
+    environment:
+      - NEO4J_AUTH=${NEO4J_USER}:${NEO4J_PASS}
+    volumes:
+      - ${DATA_DIR}/neo4j:/var/lib/neo4j/data
+      - ${LOG_DIR}/neo4j:/var/log/neo4j
+    networks:
+      - backend
