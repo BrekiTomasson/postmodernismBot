@@ -7,20 +7,19 @@
   "version": "0.0.0-development",
   "description": "The monorepo for the Postmodernism Bot.",
   "license": "MIT",
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "jest": "^23.6.0",
+  "scripts": {
+    "build": "tsc -b packages",
+    "lint": ""
+  },
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "postmodern-viewer": "file:packages/postmodern-viewer",
+    "postmodern-worker": "file:packages/postmodern-worker",
+    "tslint-eslint-rules": "^5.4.0",
     "lerna": "^3.8.5",
     "shelljs": "^0.8.3",
-    "ts-jest": "^22.0.4",
     "ts-node": "^5.0.0",
     "tslint": "^5.9.1",
     "typescript": "^3.2.2"
-  },
-  "scripts": {
-    "build": "npx lerna exec build"
-  },
-  "dependencies": {
-    "postmodernism-bot-worker": "file:packages/postmodernism-bot-worker"
   }
 }

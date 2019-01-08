@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "postmodern-viewer"
+    },
+    {
+      "path": "postmodern-worker"
+    }
+  ]
+}

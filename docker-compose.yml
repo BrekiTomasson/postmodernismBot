@@ -11,34 +11,24 @@ volumes:
     driver: ${VOLUMES_DRIVER}
 
 services:
-
   worker:
-    build: ./docker/worker
-    tty: true
+    build:
+      context: ./packages/postmodern-worker
+      dockerfile: ./Dockerfile
     environment:
       - DEBUG=true
+      - NODE_ENV=${ENVIRONMENT}
+      - NEO4J_HOST=${NEO4J_HOST}
+      - NEO4J_USER=${NEO4J_USER}
+      - NEO4J_PASS=${NEO4J_PASS}
     networks:
       - backend
     volumes:
-      - ./docker/worker/supervisor.d:/etc/supervisor.d
-      - ./corpus:/usr/src/app/corpus
-      - ${LOG_DIR}/neo4j:/var/log
+      - ./packages/tsconfig.settings.json:/usr/src/tsconfig.settings.json:ro
+      - ./corpus:/usr/src/app/corpus:ro
+      - ${LOG_DIR}/worker:/root/.npm/_logs
     depends_on:
       - neo4j
-
-  viewer:
-    build: ./docker/viewer
-    environment:
-      - NEO4J_USER=${NEO4J_USER}
-      - NEO4J_PASS=${NEO4J_PASS}
-    ports:
-      - 3000:3000
-    volumes:
-      - ./packages/postmodernism-bot-dataviwer/src:/usr/src/app/src
-    depends_on:
-      - neo4j
-    networks:
-      - frontend
 
   neo4j:
     build: ./docker/neo4j
