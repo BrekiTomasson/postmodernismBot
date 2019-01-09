@@ -1,5 +1,16 @@
 FROM node:alpine
-RUN apk add --update nodejs
+
 WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN apk add --update nodejs
+RUN npm install
+
 COPY . .
-RUN rm -rf ./dist && rm -rf ./node_modules && npm install && ./node_modules/.bin/tsc
+
+WORKDIR /usr/src/app/dist
+
+COPY package*.json ./dist/
+
+RUN ./node_modules/.bin/tsc

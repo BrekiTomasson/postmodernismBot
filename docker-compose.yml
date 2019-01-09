@@ -24,7 +24,6 @@ services:
     networks:
       - backend
     volumes:
-      - ./packages/tsconfig.settings.json:/usr/src/tsconfig.settings.json:ro
       - ./corpus:/usr/src/app/corpus:ro
       - ${LOG_DIR}/worker:/root/.npm/_logs
     depends_on:
