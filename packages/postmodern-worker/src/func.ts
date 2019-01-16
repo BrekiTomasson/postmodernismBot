@@ -1,18 +1,21 @@
-import { fs } from 'fs'
-import { path } from 'path'
+import fs = require('fs')
+import path = require('path')
 
-export class Func {
-  constructor() {
-  }
+let [flo, cei, rnd] = [Math.floor, Math.ceil, Math.random]
 
-  public getFileContents(file: string): string {
-    return fs.readFileSync(path.resolve(file), 'utf8');
-  }
+interface Func {
+  readfile(file: string)
+  rand(smallest: number, largest: number): number
+}
 
-  public getRandomInt(smallest: number, largest: number): number {
-    return Math.floor(
-      Math.random() * (Math.floor(largest) - Math.ceil(smallest)) + Math.ceil(smallest)
-    );
+export const func: Func = {
+
+  readfile: (file: string) => {
+    return fs.createReadStream(path.resolve(file));
+  },
+
+  rand: (smallest: number, largest: number): number => {
+    return flo(rnd() * (flo(largest) - cei(smallest)) + cei(smallest));
   }
 
 }

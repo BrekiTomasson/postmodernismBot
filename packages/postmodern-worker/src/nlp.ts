@@ -1,38 +1,47 @@
-import winkNlpUtils from 'wink-nlp-utils';
-import winkPosTagger from 'wink-pos-tagger';
+import natural = require('natural')
+import { default as Tagger } from 'wink-pos-tagger'
 
-const pos = winkPosTagger();
+const TfIdf = natural.TfIdf
 
-export interface PosWord {
-  value: string;
-  tag: string;
-  normal: string;
-  pos: string;
-  lemma: string | undefined;
+interface tokenCallback {
+  (error: Error | null, tokens: string[]): void
+}
+
+interface PosCallback {
+  (error: Error | null, tokens: PosObject): void
+}
+
+export interface PosObject {
+  value: string,
+  tag: string,
+  normal: string,
+  pos: string,
+  lemma: string | undefined
 }
 
 export class NLP {
-  public corpus: Set<string> = new Set();
-  public tokens: string[];
+  public tfidf: natural.TfIdf
+  public tokenizer: natural.sentenceTokenizer
+  public tagger: Tagger
 
   constructor() {
-    this.corpus = new Set();
-    this.tokens = [];
+    this.tfidf = new TfIdf()
+    this.tokenizer = new natural.SentenceTokenizer()
+    this.tagger = new Tagger()
   }
 
-  public add(sentences: string) {
-    winkNlpUtils.string.sentences(sentences.replace(/\n|\r\n|\r/g, ' '))
-      .forEach((sentence: string) => {
-        console.log('got one!');
-        if (!this.corpus.has(sentence.trim())) {
-          this.corpus.add(sentence.trim());
-          console.log(this.tag(sentence.trim()));
-        }
-      });
+  public parse(corpus: string, callback: tokenCallback) {
+    let parsedCorpus = this.tokenizer.tokenize(corpus)
+    callback(null, parsedCorpus)
   }
 
-  public tag(sentence: string): PosWord {
-    return pos.tagSentence(sentence);
+  public addDocument(document: string) {
+    this.tfidf.addDocument(document)
+  }
+
+  public posTag(sentence: string, callback: PosCallback) {
+    console.log(`Doing stuff with sentence: ${sentence}`)
+    callback(null, this.tagger.tagSentence(sentence))
   }
 
 }

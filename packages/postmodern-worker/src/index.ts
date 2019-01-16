@@ -1,21 +1,12 @@
-/**
- * Welcome to the postmodernismBot, an excercise in naturaal language
- * processing and (pseudo-)artificial intelligence, written by Breki
- * Tomasson mainly as a way to try out a couple of theories and to
- * get more comfortable writing code in Node.
- *
- * This is still very much version 0.0.0, so expect no miracles here.
- *
- * This file just gets us started. The real magic starts happening
- * over in worker.js.
- */
-
-import debug from 'debug';
 import { Worker } from './worker';
 
-if (process.env.DEBUG === 'true') {
-  debug.enable('*');
-  debug('Worker')('### Launching the worker!');
+async function delay(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-const worker = (new Worker).init();
+(async () => {
+  await console.log("Waiting to start ...")
+  await delay(10000);
+  await (new Worker).init();
+  await console.log('All done working.')
+})()

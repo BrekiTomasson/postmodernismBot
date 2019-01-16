@@ -1,23 +1,33 @@
 {
-  "extends": "../tsconfig.settings.json",
   "compilerOptions": {
-    "compileOnSave": true,
+    "module": "commonjs",
+    "target": "es6",
+    "lib": [
+      "es2017",
+      "es2018",
+      "dom"
+    ],
     "outDir": "dist",
     "rootDir": "src",
-    "target": "es2017",
-    "lib": [
-      "es2017"
-    ],
-    "module": "commonjs",
+    "composite": true,
     "declaration": true,
     "declarationMap": true,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "preserveConstEnums": true,
+    "pretty": true,
+    "removeComments": true,
     "sourceMap": true,
     "strict": true,
-    "composite": true,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "stripInternal": true,
     "typeRoots": [],
     "types": []
   },
@@ -25,7 +35,6 @@
     "src/**/*"
   ],
   "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
+    "node_modules"
   ]
 }

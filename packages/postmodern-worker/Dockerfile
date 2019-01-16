@@ -11,6 +11,5 @@ COPY . .
 
 WORKDIR /usr/src/app/dist
 
-COPY package*.json ./dist/
+CMD ["node", "--optimize_for_size", "index"]
 
-RUN ./node_modules/.bin/tsc
