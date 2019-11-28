@@ -1,26 +1,73 @@
 {
-  "name": "postmodernism-bot",
+  "author": "Breki Tomasson",
+  "bugs": {
+    "url": "https://github.com/BrekiTomasson/postmodernismBot/issues"
+  },
+  "dependencies": {
+    "compromise": "^12.0.0",
+    "debug": "^4.1.1",
+    "dotenv-extended": "^2.5.0",
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "jest": "^24.9.0",
+    "lexed": "^1.0.10",
+    "markov-chains-text": "^1.0.0",
+    "node-telegram-bot-api": "^0.40.0",
+    "nodemon": "^2.0.1",
+    "rxjs": "^6.5.3",
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1",
+    "uppercamelcase": "^3.0.0",
+    "wink-pos-tagger": "^2.2.2"
+  },
+  "description": "[![NPM](https://nodei.co/npm/postmodernismBot.png)](https://nodei.co/npm/postmodernismBot/)",
+  "engines": {
+    "node": ">= 9.8",
+    "npm": ">= 5.7"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "extends": [
+      "eslint-config-breki"
+    ]
+  },
+  "homepage": "https://github.com/BrekiTomasson/postmodernismBot#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "postmodernism_bot",
+  "nodemonConfig": {
+    "delay": "5000",
+    "events": {
+      "crash": "osascript -e 'display notification \"Crashed!\" with title \"postmodernismBot\"'",
+      "restart": "osascript -e 'display notification \"Restarting!\" with title \"postmodernismBot\"'",
+      "start": "osascript -e 'display notification \"Starting up!\" with title \"postmodernismBot\"'"
+    },
+    "ignore": [
+      "brain/*",
+      "corpus/*",
+      "test/*"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/BrekiTomasson/postmodernismBot.git"
   },
-  "version": "0.0.0-development",
-  "description": "The monorepo for the Postmodernism Bot.",
-  "license": "MIT",
   "scripts": {
-    "build": "tsc -b packages",
-    "startup": "npm run build && docker-compose build && docker-compose up"
+    "lint": "node ./node_modules/eslint-config-breki/lint",
+    "start": "node index",
+    "test": "jest",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
-  "dependencies": {
-    "app-root-path": "^2.1.0",
-    "eslint": "^5.12.0",
-    "eslint-config-breki": "^1.0.20",
-    "lerna": "^3.8.5",
-    "postmodern-worker": "file:packages/postmodern-worker",
-    "shelljs": "^0.8.3",
-    "ts-node": "^5.0.0",
-    "tslint": "^5.9.1",
-    "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.2.2"
+  "version": "0.0.0-development",
+  "devDependencies": {
+    "eslint": "~5.2.0",
+    "eslint-config-breki": "^1.0.29",
+    "loggly": "^1.1.1",
+    "semantic-release": "^15.9.3",
+    "travis-deploy-once": "^5.0.1"
   }
 }

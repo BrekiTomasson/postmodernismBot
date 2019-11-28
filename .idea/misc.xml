@@ -84,11 +84,6 @@
   <component name="PhingConfiguration">
     <phingPath>$USER_HOME$/Library/phing-latest.phar</phingPath>
   </component>
-  <component name="PhpAnalysisConfiguration">
-    <unchecked_exceptions>
-      <fqn value="\Error" />
-    </unchecked_exceptions>
-  </component>
   <component name="ProjectDictionaryState">
     <dictionary name="brekitomasson" />
   </component>

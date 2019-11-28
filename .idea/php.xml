@@ -5,6 +5,11 @@
       <MessDetectorConfiguration tool_path="$USER_HOME$/Library/phpmd.phar" />
     </phpmd_settings>
   </component>
+  <component name="PhpAnalysisConfiguration">
+    <unchecked_exceptions>
+      <fqn value="\Error" />
+    </unchecked_exceptions>
+  </component>
   <component name="PhpCodeSniffer">
     <phpcs_settings>
       <PhpCSConfiguration tool_path="$USER_HOME$/Library/phpcs.phar" />
@@ -12,7 +17,7 @@
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter home="$USER_HOME$/Library/Caches/PhpStorm2018.2/plugins/idea-php-latest-plugin/php-v7.2.8/php.sh" id="32fc0358-defa-4177-b8e2-ec3076d469c1" name="PHP latest" debugger_id="php.debugger.XDebug" />
+      <interpreter id="32fc0358-defa-4177-b8e2-ec3076d469c1" name="PHP latest" home="$USER_HOME$/Library/Caches/PhpStorm2018.2/plugins/idea-php-latest-plugin/php-v7.2.8/php.sh" debugger_id="php.debugger.XDebug" />
     </interpreters>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

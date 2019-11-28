@@ -2,86 +2,182 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e5ef96-82e7-4691-a355-6bb4e33ab727" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.schema" beforeDir="false" afterPath="$PROJECT_DIR$/.env.schema" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/bot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brain/classifier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/conf/mongod.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/,gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/WiredTiger" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/WiredTiger.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/WiredTiger.turtle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/WiredTiger.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/WiredTigerLAS.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/_mdb_catalog.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/collection-0--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/collection-0--671093414641692615.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/collection-0-2610713448271067827.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/collection-2--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/collection-4--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/collection-7--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T00-35-43Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T00-38-01Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-06-56Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-09-01Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-10-20Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-16-09Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-17-30Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-18-06Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-20-18Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-21-08Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-22-12Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-25-06Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-27-07Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-30-20Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-41-43Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T01-51-04Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T03-38-45Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T04-21-16Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T04-25-32Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T04-26-50Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T04-27-38Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T07-15-36Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T08-14-18Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T08-15-39Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T08-19-57Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T08-39-36Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T08-48-01Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T08-51-41Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T08-55-18Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T08-57-51Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T09-07-33Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T09-09-52Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T09-10-48Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T09-18-01Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T09-19-16Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T09-20-26Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-13T09-22-22Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.2019-01-16T06-19-35Z-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/diagnostic.data/metrics.interim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/index-1--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/index-1--671093414641692615.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/index-1-2610713448271067827.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/index-3--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/index-5--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/index-6--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/index-8--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/index-9--2094309897828951907.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/journal/WiredTigerLog.0000000039" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/journal/WiredTigerPreplog.0000000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/journal/WiredTigerPreplog.0000000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/mongod.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/sizeStorer.wt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/data/storage.bson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/log/,gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/mongo/log/mongod.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/conf/neo4j.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.counts.db.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.counts.db.b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.labelscanstore.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.labeltokenstore.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.labeltokenstore.db.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.labeltokenstore.db.names" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.labeltokenstore.db.names.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.nodestore.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.nodestore.db.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.nodestore.db.labels" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.nodestore.db.labels.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db.arrays" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db.arrays.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db.index.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db.index.keys" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db.index.keys.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.propertystore.db.strings.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.relationshipgroupstore.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.relationshipgroupstore.db.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.relationshipstore.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.relationshipstore.db.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.relationshiptypestore.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.relationshiptypestore.db.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.relationshiptypestore.db.names" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.relationshiptypestore.db.names.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.schemastore.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.schemastore.db.id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/graph.db/neostore.transaction.db.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/data/databases/store_lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/logs/,gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/logs/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/logs/debug.log.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/logs/gc.log.0.current" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/logs/http.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/neo4j/plugins/graph-algorithms-algo-3.5.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/worker/log/,gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lerna.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/.env.schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/bot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/environment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/lib/web/webtemplate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/single.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/src/common-functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/src/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/src/corpus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/src/express.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/src/new-twitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/src/telegram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/src/text.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/src/twitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/test/config.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/test/corpus.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/test/environment.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/test/express.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/test/natural.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/test/telegram.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/test/twitter.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/corpus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/corpus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/natural.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/new-twitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/new-twitter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/src/func.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/src/mongo.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/src/neo4j.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/src/nlp.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/src/types/natural.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/src/worker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodern-worker/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/postmodernism-bot-worker/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.js" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <executablePath>/usr/local/bin/composer</executablePath>
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-858357446">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="env" value="1" />
-          <entry key="js" value="15" />
-          <entry key="json" value="3" />
-          <entry key="schema" value="1" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key=".env file" value="1" />
-          <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="15" />
-          <entry key="PLAIN_TEXT" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="ESLintLanguageService" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="env" value="85" />
-          <entry key="js" value="295" />
-          <entry key="json" value="33" />
-          <entry key="schema" value="9" />
-          <entry key="txt" value="177" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key=".env file" value="85" />
-          <entry key="JSON" value="33" />
-          <entry key="JavaScript" value="295" />
-          <entry key="PLAIN_TEXT" value="186" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.composer.command.options" />
-      <usages-collector id="statistics.php.composer.actions" />
-      <usages-collector id="statistics.php.rename.constructor" />
-      <usages-collector id="statistics.kubernetes.usages" />
-      <usages-collector id="statistics.php.new.class" />
-      <usages-collector id="statistics.php.new.test" />
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <execution>
+      <executable path="/usr/local/bin/composer" />
+    </execution>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -103,96 +199,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/.env.schema" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/src/corpus.js" />
-        <option value="$PROJECT_DIR$/single.js" />
-        <option value="$PROJECT_DIR$/src/config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/new-twitter.js" />
-        <option value="$PROJECT_DIR$/bot.js" />
-        <option value="$PROJECT_DIR$/corpus/HermanHesse-Siddhartha.txt" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="440" />
-    <option name="y" value="193" />
-    <option name="width" value="1897" />
-    <option name="height" value="1095" />
-  </component>
+  <component name="ProjectId" id="1UFb5C6k4dI91bDhmsQ6ofdifZY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <autoscrollFromSource ProjectPane="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="postmodernismBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postmodernismBot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="postmodernismBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postmodernismBot" type="462c0819:PsiDirectoryNode" />
-              <item name="corpus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="postmodernismBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postmodernismBot" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="postmodernismBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postmodernismBot" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="postmodernismBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postmodernismBot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -207,15 +230,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -226,141 +249,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533228780528</updated>
+      <workItem from="1574955107030" duration="2422000" />
     </task>
     <servers />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="440" y="193" width="1897" height="1095" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1652452" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Statistic" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env.schema">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="17" lean-forward="true" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/single.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/natural.js" />
-    <entry file="file://$PROJECT_DIR$/src/level.js" />
-    <entry file="file://$PROJECT_DIR$/src/telegram.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/express.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common-functions.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brain/classifier.json" />
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/corpus.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/corpus/HermanHesse-Siddhartha.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="263" column="10" selection-start-line="263" selection-start-column="10" selection-end-line="263" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/new-twitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/text.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/web/webtemplate.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/environment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
