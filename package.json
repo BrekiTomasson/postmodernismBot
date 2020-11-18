@@ -67,7 +67,7 @@
     "eslint": "~5.2.0",
     "eslint-config-breki": "^1.0.29",
     "loggly": "^1.1.1",
-    "semantic-release": "^15.9.3",
+    "semantic-release": "^17.2.3",
     "travis-deploy-once": "^5.0.1"
   }
 }
