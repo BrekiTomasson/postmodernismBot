@@ -18,7 +18,8 @@
     "twit": "^2.2.11",
     "twitter": "^1.7.1",
     "uppercamelcase": "^3.0.0",
-    "wink-pos-tagger": "^2.2.2"
+    "wink-pos-tagger": "^2.2.2",
+    "@snyk/protect": "latest"
   },
   "description": "[![NPM](https://nodei.co/npm/postmodernismBot.png)](https://nodei.co/npm/postmodernismBot/)",
   "engines": {
@@ -60,7 +61,9 @@
     "start": "node index",
     "test": "jest",
     "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "version": "0.0.0-development",
   "devDependencies": {
@@ -69,5 +72,6 @@
     "loggly": "^1.1.1",
     "semantic-release": "^15.9.3",
     "travis-deploy-once": "^5.0.1"
-  }
+  },
+  "snyk": true
 }
